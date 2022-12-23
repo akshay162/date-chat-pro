@@ -107,19 +107,40 @@ const Home = () => {
     <div className='root'>
       <div>
         <Head>
-          <title>Tinder Chat Pro</title>
+          <title>Date Chat Pro</title>
         </Head>
         <div className="container">
           <div className="header">
             <div className="header-title">
-              <h1>Date Like a Pro </h1>
+              <h1 style={{color: "#2d3047"}}>Transform your dating life</h1>
             </div>
             <div className="header-subtitle">
-              <h2>Feeling confused what to reply to her ? Your reply doesn't generally interest her? Now you can reply to her in a way that touches her heart ❤️ </h2>
+              <h2 style={{ color : '#5a3a31'}}>
+                <b>Impress your date with confident, engaging conversation skills. Because swiping right isn't enough</b>
+              </h2>
             </div>
-          </div>
-          
+          </div>          
         </div>
+      </div>
+
+      <div className='how-to-use'>
+        <h4 style={{color: '#82667f'}}>
+          <b>
+          Don't let your fear of small talk ruin your chances of finding 'the one'. Our expert AI will teach you the art of conversation and help you connect with your date on a deeper level.
+          </b>
+        </h4>
+      </div>
+
+      <div className='how-to-use'>
+        <h4 style={{color: '#82667f'}}>
+          <b>
+            <u>
+              How to use:
+            </u>
+            <i> Just copy her replies in the box below and hit enter. Our AI will generate the perfect reply for every message. 
+            </i>
+          </b>
+        </h4>
       </div>
 
       <div className='prompt-container'>
@@ -137,9 +158,22 @@ const Home = () => {
           type='submit'
           onClick={callGenerateEndpoint}
           >
-            {isGenerating ? <span className="loader"></span> : <p> Reply</p>}
+            {isGenerating ? 
+              <span className="loader"></span> : 
+              <p style={{color: '#e1e2ed'}}>Reply</p>}
         </button>
       </div>
+      <div>
+          <h5 
+            style={{
+              float: 'left', 
+              color: '#181d27',
+              marginLeft: '30px'
+            }}
+          >
+            Powered by GPT-3
+          </h5>
+        </div>
     </div>
   );
 };

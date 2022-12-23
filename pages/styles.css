@@ -6,15 +6,11 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-.main {
-    background-color: rgb(0, 0, 0);
-}
-
 .root {
     display: flex;
     place-content: auto;
     align-items: auto;
-    background-color: rgb(0, 0, 0);
+    background-color: #e1e2ed;
     flex-flow: column nowrap;
     gap: 0px;
     padding:0;
@@ -23,6 +19,18 @@ body {
     left:0;
     height: 100%;
     width: 100%;
+}
+
+.how-to-use {
+    display: flex;
+    place-content: center;
+    color: white;
+}
+
+.gpt {
+    display: inline;
+    float: right;
+    color: #5a3a31;
 }
 
 .container {
@@ -35,10 +43,9 @@ body {
     height: fit-content;
     max-width: auto;
     overflow: auto;
-    padding: 50px;
+    padding: 40px;
     position: relative;
     width: auto;
-    gap: 24px;
 }
 
 .header {    
@@ -51,7 +58,6 @@ body {
 
 .header-title {
     display: flex;
-    gap: 12px;
 }
 
 .header-title h1 {
@@ -73,26 +79,15 @@ body {
 }
 
 .prompt-container {
-    /* place-content: center center;
-    align-items: center;
-    display: flex;
-    flex: 0 0 content;
-    float: center;
-    /* flex-flow: column wrap; */
-    /* gap: 80px;
-    height: min-content;
-    padding: 0px;
-    width: auto; */
     display: flex;
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 30px;
     flex-flow: column wrap;
     width: 500px;
-    border: 15px solid green;
+    border: 15px solid rgb(75, 114, 82);
     padding: 50px;
     height: 100%;
-    /* margin: 20px; */
 }
 
 .input-text-bar {
@@ -102,9 +97,8 @@ body {
     display: flex;
     flex-flow: row nowrap;
     width: 500px;
-    /* border: 15px solid green; */
     padding: 50px;
-    height: 100%;
+    height: 100vh;
 }
 
 .input-text {
@@ -120,8 +114,7 @@ body {
     margin-left: 20px;
     margin-right: 10px;
     margin-top: 10px;
-    /* float: right; */
-    background-color: rgb(33, 140, 228);
+    background-color: #5a3a31;
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
@@ -131,8 +124,6 @@ body {
     cursor: pointer;
     display: flex;
     padding-left: 14px;
-    /* flex: 0 0 auto; */
-    /* flex-flow: column nowrap; */
 }
 
 .prompt-box {
@@ -460,6 +451,7 @@ textarea {
     border-right: 2px solid transparent;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
+    margin: 10px;
 }
 
 @keyframes rotation {
