@@ -6,33 +6,39 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
+.main {
+    background-color: rgb(0, 0, 0);
+}
+
 .root {
     display: flex;
-    place-content: center flex-start;
-    align-items: center;
+    place-content: auto;
+    align-items: auto;
     background-color: rgb(0, 0, 0);
     flex-flow: column nowrap;
-    gap: 10px;
-    height: 100vh;
-    overflow: auto;
-    padding: 0px;
-    position: relative;
+    gap: 0px;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
 }
 
 .container {
     display: flex;
-    place-content: center flex-start;
-    align-items: center;
+    place-content: flex-start;
+    align-items: auto;
     flex: 0 0 auto;
     flex-flow: column nowrap;
     gap: 10px;
     height: fit-content;
-    max-width: 975px;
+    max-width: auto;
     overflow: auto;
     padding: 50px;
     position: relative;
     width: auto;
-    gap: 64px;
+    gap: 24px;
 }
 
 .header {    
@@ -67,15 +73,66 @@ body {
 }
 
 .prompt-container {
-    place-content: flex-end center;
+    /* place-content: center center;
     align-items: center;
     display: flex;
-    flex: 0 0 auto;
-    flex-flow: column nowrap;
-    gap: 16px;
+    flex: 0 0 content;
+    float: center;
+    /* flex-flow: column wrap; */
+    /* gap: 80px;
     height: min-content;
     padding: 0px;
-    width: min-content;
+    width: auto; */
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 30px;
+    flex-flow: column wrap;
+    width: 500px;
+    border: 15px solid green;
+    padding: 50px;
+    height: 100%;
+    /* margin: 20px; */
+}
+
+.input-text-bar {
+    margin-top: 0px;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 500px;
+    /* border: 15px solid green; */
+    padding: 50px;
+    height: 100%;
+}
+
+.input-text {
+    margin-top: 10px;
+    border-radius: 14px;
+    height: 50px;
+    width: 85%;
+    padding-left: 10px;
+    
+}
+
+.send-button {
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    /* float: right; */
+    background-color: rgb(33, 140, 228);
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 50px;
+    width: 15%;
+    will-change: transform;
+    cursor: pointer;
+    display: flex;
+    padding-left: 14px;
+    /* flex: 0 0 auto; */
+    /* flex-flow: column nowrap; */
 }
 
 .prompt-box {
@@ -85,19 +142,20 @@ body {
     border-right-width: 1px;
     border-style: solid;
     border-top-width: 1px;
-    place-content: flex-start;
-    align-items: flex-start;
+    place-content: flex-end;
+    align-items: flex-end;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     display: flex;
+    float: right;
     flex: 0 0 auto;
     flex-flow: column nowrap;
     gap: 10px;
-    height: 150px;
+    height: 15px;
     overflow: hidden;
     padding: 20px;
     position: relative;
-    width: 610px;
+    width: 600px;
     max-width: 1200px;
     will-change: transform;
     overflow: auto;
@@ -107,7 +165,7 @@ body {
     font-style: normal;
     letter-spacing: 0px;
     line-height: 1.6em;
-    text-align: start;
+    text-align: end;
     color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
     text-transform: none;
@@ -173,7 +231,7 @@ textarea {
     place-content: flex-start;
     align-items: flex-start;
     background-color: rgb(255, 79, 18);
-    border-radius: 100px;
+    border-radius: 10px;
     display: flex;
     flex: 0 0 auto;
     flex-flow: column nowrap;
@@ -326,7 +384,7 @@ textarea {
     color: rgba(255, 255, 255, 0.5);
 }
 
-@media (min-width: 810px) and (max-width: 1199px) {
+/* @media (min-width: 810px) and (max-width: 1199px) {
     .container {
         max-width: 600px;
         width: 100%;
@@ -340,9 +398,9 @@ textarea {
     .prompt-box {
         width: 100%;
     }
-}
+} */
 
-@media (max-width: 809px) {
+/* @media (max-width: 809px) {
     .container {
         max-width: 500px;
         width: 100%;
@@ -356,9 +414,9 @@ textarea {
     .prompt-box {
         width: 100%;
     }
-}
+} */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .container {
         max-width: 400px;
         width: 100%;
@@ -388,7 +446,7 @@ textarea {
     .prompt-box {
         width: 100%;
     }
-}
+} */
 
 
 
@@ -412,4 +470,21 @@ textarea {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.test {
+    padding: 10px;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.message {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    align-items: center;
+    align-content: center;
+    margin-left: 300px;
+    margin-right: 300px;
 }
